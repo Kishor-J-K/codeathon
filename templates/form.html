@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Prediction</title>
+</head>
+<body>
+    <h1>Loan Approval Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="person_age">Age:</label>
+        <input type="number" name="person_age" required><br><br>
+
+        <label for="person_income">Income:</label>
+        <input type="number" name="person_income" required><br><br>
+
+        <label for="person_home_ownership">Home Ownership:</label>
+        <select name="person_home_ownership" required>
+            <option value="OWN">OWN</option>
+            <option value="RENT">RENT</option>
+            <option value="MORTGAGE">MORTGAGE</option>
+        </select><br><br>
+
+        <label for="person_emp_length">Employment Length:</label>
+        <input type="number" name="person_emp_length" step="0.1" required><br><br>
+
+        <label for="loan_intent">Loan Intent:</label>
+        <select name="loan_intent" required>
+            <option value="EDUCATION">EDUCATION</option>
+            <option value="MEDICAL">MEDICAL</option>
+            <option value="VENTURE">VENTURE</option>
+        </select><br><br>
+
+        <label for="loan_grade">Loan Grade:</label>
+        <select name="loan_grade" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select><br><br>
+
+        <label for="loan_amnt">Loan Amount:</label>
+        <input type="number" name="loan_amnt" required><br><br>
+
+        <label for="loan_int_rate">Interest Rate:</label>
+        <input type="number" name="loan_int_rate" step="0.01" required><br><br>
+
+        <label for="loan_percent_income">Percent Income:</label>
+        <input type="number" name="loan_percent_income" step="0.01" required><br><br>
+
+        <label for="cb_person_default_on_file">Default on File:</label>
+        <select name="cb_person_default_on_file" required>
+            <option value="Y">Yes</option>
+            <option value="N">No</option>
+        </select><br><br>
+
+        <label for="cb_person_cred_hist_length">Credit History Length:</label>
+        <input type="number" name="cb_person_cred_hist_length" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
